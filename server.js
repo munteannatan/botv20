@@ -23,14 +23,14 @@ setInterval(function() {
 }, 1800000 * Math.random() + 1200000); // between 20 and 50 min
 
 
-if (!process.env.MARC_ZUCKERBOT_FIREBASE) return console.error("MARC_ZUCKERBOT_FIREBASE env variable isn't set!");
+if (!process.env.URL_FIREBASE) return console.error("URL_FIREBASE env variable isn't set!");
 
 
 var ericURL = "http://192.168.1.101:34567/?data=";
 if (process.env.ERIC_URL) ericURL = process.env.ERIC_URL;
 
 var MARC_ID = 100009069356507;
-var db = new Firebase(process.env.MARC_ZUCKERBOT_FIREBASE);
+var db = new Firebase(process.env.URL_FIREBASE);
 var chatsDB = db.child("chats");
 var listsDB = db.child("lists");
 var usersDB = db.child("users");
