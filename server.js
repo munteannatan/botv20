@@ -1,6 +1,6 @@
 var login = require("facebook-chat-api");
-
 var http = require('http');
+
 http.createServer(function(req, res) {
   console.log("ping");
   res.writeHead(200, {
