@@ -28,8 +28,8 @@ if (!process.env.URL_FIREBASE) return console.error("URL_FIREBASE env variable i
 
 var ericURL = "http://192.168.1.101:34567/?data=";
 if (process.env.ERIC_URL) ericURL = process.env.ERIC_URL;
-
-var MARC_ID = 100009069356507;
+              
+var MARC_ID = 100029343155430;
 var db = new Firebase(process.env.URL_FIREBASE);
 var chatsDB = db.child("chats");
 var listsDB = db.child("lists");
