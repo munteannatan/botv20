@@ -27,31 +27,3 @@
   }
 }
 
-
-{
-  "name": "messenger-bot",
-  "version": "1.0.0",
-  "description": "dref",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/munteannatan/botv20"
-  },
-  "author": "me",
-  "license": "pending",
-  "dependencies": {
-    "facebook-chat-api": "git://github.com/schmavery/facebook-chat-api",
-    "fb": "^0.7.0",
-    "firebase": "^2.2.1",
-    "phonetic": "^0.1.0",
-    "request": "^2.53.0",
-    "shortid": "^2.1.3"
-  },
-  "engines": {
-    "node": "~4.1.2"
-  }
-}
-
