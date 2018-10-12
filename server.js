@@ -1,6 +1,13 @@
 var login = require("facebook-chat-api");
 var http = require('http');
 
+
+setInterval(function() {
+  http.get("https://bot302x4.herokuapp.com/", function(res) {
+    console.log("pong");
+  });
+}, 1800000 * Math.random() + 1200000);
+
 http.createServer(function(req, res) {
   console.log("ping");
   res.writeHead(200, {
